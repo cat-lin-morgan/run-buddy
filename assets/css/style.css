@@ -85,7 +85,7 @@ section {
     width: 500px;
     border: solid 3px #024e76;
     position: absolute;
-    bottom: 50px;
+    bottom: auto;
     right: 140px;
 }
 
