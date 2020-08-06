@@ -68,8 +68,7 @@ footer div a{
 }
 
 section {
-    padding: 60px;
-    
+    padding: 60px; 
 }
 
 .hero {
@@ -86,6 +85,83 @@ section {
     width: 500px;
     border: solid 3px #024e76;
     position: absolute;
-    top: 120px;
+    bottom: 50px;
     right: 140px;
 }
+
+
+/* This means select an h3 that is a child of .hero-form */
+/* The browser will first look for an element with .hero-form then
+    look through all the children until it finds an h3 element */
+
+.hero-form h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+.hero-form label {
+    margin: 0 5px;
+}
+
+.form-input {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.hero-form button {
+    background-color: #024e76;
+    color: #fce138;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Random experiments below
+
+p.boop {
+    color: #ff0054;
+}
+
+/* an H3 element with the class .boop */
+/* h3 .boop {
+    color:  #fff;
+} */
+
+
+
+/* an element with class .boop inside h3
+h3 .boop {
+    color: #000;
+} */
+
+/* Look in the DOM for an element with class .boop that is inside an element with class .boop that is inside an element with class .boop */
+/* .boop .boop .boop {
+    color: #cc9900;
+} */ 
+
+
+#ffffff
+
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+0 - 255 
+
+.b {
+    color: #000000;
+    color: #333333;
+    color: #5400ff;
+    color: #cccccc;
+    color: #eeeeee;
+    color: #ff0054;
+    color: #ffffff;
+}
+
