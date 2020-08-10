@@ -233,7 +233,6 @@ section {
 .contact {
     background-color: #024e76;
     text-align: center;
-    /* float: left; */
 }
 
 .contact h2 {
@@ -272,6 +271,9 @@ section {
   
 
 
+/* 
+
+don't leave this
 
 #ffffff
 
@@ -288,4 +290,4 @@ section {
     color: #ff0054;
     color: #ffffff;
 }
-
+ */
