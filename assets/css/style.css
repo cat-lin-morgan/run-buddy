@@ -235,11 +235,10 @@ section {
 /* trainer card styling starts here */
 
 .trainer {
-    width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 20px;
+    flex: 1;
     background: #024e76;
     color: #fce138;
-    overflow: auto;
 }
 
 .trainers {
@@ -251,14 +250,11 @@ section {
 }
 
 .trainer img {
-    width: 35%;
-    float: left;
+    width: 100%;
 }
 
 .trainer-bio {
-    padding: 35px;
-    float: left;
-    width: 65%;
+    padding: 25px;
     line-height: 1.3;
 }
 
