@@ -217,7 +217,7 @@ section {
 }
 
 .step-img img {
-    wax-width: 100%;
+    max-width: 100%;
 }
 
 .step-text {
