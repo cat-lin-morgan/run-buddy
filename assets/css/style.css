@@ -345,18 +345,39 @@ section {
       font-size: 16px;
   }
 
+    /* grid styling starts here */
+
     .service-grid-container {
+        max-width: 940px;
+        margin: 0 auto;
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 100px);
+        grid-gap: 10px;
+        align-items: start | end | center | stretch;
     }
 
     .service-grid-item {
-        width: 200px;
-        height: 50px;
         background-color: orange;
         border: solid;
         color: black;
+        padding: 1em;
     }
 
+    .box1 {
+        grid-column: 1/ span 1;
+        grid-row: 1/ span 2;
+    }
+
+    .box2 {
+        grid-column: 3/4; 
+        grid-row: 1/-1; 
+    }
+
+    .box3 {
+        grid-column: 2/ span 2;
+        grid-row: 3/ span 1;
+    }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER DEVICES */
 
@@ -483,33 +504,3 @@ section {
     .contact-form {
         order: 3;
     }
-
-}
-
-
-
-
-
-
-
-
-/* 
-
-don't leave this
-
-#ffffff
-
-0 1 2 3 4 5 6 7 8 9 A B C D E F
-
-0 - 255 
-
-.b {
-    color: #000000;
-    color: #333333;
-    color: #5400ff;
-    color: #cccccc;
-    color: #eeeeee;
-    color: #ff0054;
-    color: #ffffff;
-}
- */
