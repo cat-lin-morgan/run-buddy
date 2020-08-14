@@ -392,7 +392,8 @@ section {
 
     /* still not working */
     .contact-info iframe {
-        flex: 2 100%;
+        /* flex: 2 100%; */
+        width: 100%;
     }
 
    footer h2, footer div {
@@ -441,7 +442,35 @@ section {
 
 /* small phones and smaller phones */
 @media screen and (max-width: 575px) {
-  
+
+    .hero-form button {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%;
+    }
+
+    .into p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+
 }
 
 
