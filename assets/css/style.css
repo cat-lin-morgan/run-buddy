@@ -86,6 +86,7 @@ section {
     padding: 60px; 
 }
 
+/* hero and cta */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -321,7 +322,7 @@ section {
 
   .contact-info > * {
     flex: 1;
-    margin: 15px;
+    margin: 25px;
   }
 
   .contact-form input, .contact-form textarea {
@@ -343,11 +344,6 @@ section {
       padding: 15px 0;
       font-size: 16px;
   }
-  
-.flex-row {
-    display: flex;
-}
-
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER DEVICES */
 
@@ -382,6 +378,10 @@ section {
        text-align: center;
    }
 
+   .flex-row {
+        display: block;
+    }
+
     .section-title {
         width: 80%;
     }
@@ -390,15 +390,15 @@ section {
         flex: 0 70%;
     }
 
+    /* still not working */
     .contact-info iframe {
-        flex: 1 100%
+        flex: 2 100%;
     }
 
    footer h2, footer div {
        text-align: center;
        width: 100%;
    }
-}
 
 /* for tablets and smaller */
 
@@ -415,19 +415,28 @@ section {
     .step-info {
         flex: 2 100%;
         text-align: center;
-        justify-content:center;
+        justify-content: center;
     }
 
     .step-img {
-        flex: 0 32%;
+        flex: 0 100%;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
     }
 
+    .step-img img {
+        max-width: 35%;
+    }
+
     .step-text {
         float: 100%;
     }
+
+    .flex-row {
+        display: block;
+    }
+    
 }
 
 /* small phones and smaller phones */
