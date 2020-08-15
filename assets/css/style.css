@@ -394,6 +394,13 @@ section {
     color: var(--primary-color);
 }
 
+
+/* i made this */
+.flex-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -560,7 +567,11 @@ section {
         flex: 0 70%;
     }
 
-    .contact-info iframe {
+    .flex-contact {
+        flex-direction: column;
+    }
+
+    .iframe-wrapper {
         flex: 1 100%;
     }
 
