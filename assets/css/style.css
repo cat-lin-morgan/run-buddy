@@ -567,11 +567,7 @@ section {
         flex: 0 70%;
     }
 
-    .flex-contact {
-        flex-direction: column;
-    }
-
-    .iframe-wrapper {
+    .contact-info iframe {
         flex: 1 100%;
     }
 
