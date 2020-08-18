@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <meta charset="UTF-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         
         <title>Run Buddy</title>
@@ -34,12 +35,22 @@
                         <li>
                             <a href="#reach-out">Reach Out</a>
                         </li>
+                        <li>
+                            <a href="#service-plans">Service Plans</a>
+                        </li>
                     </ul>
                 </nav>
         </header>
 
         <!-- hero/jumbotron -->
         <section class="hero">
+
+            <div class="hero-cta">
+                <h2>Start Building Habits.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas harum delectus, ipsam corrupti distinctio veritatis dicta unde! Laboriosam, veritatis repellendus mollitia perferendis nobis dolorum sit magni libero, autem deserunt voluptatibus!</p>
+            </div>
+
+
             <div class="hero-form">
                 <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult.</p>
@@ -56,15 +67,21 @@
                
                 <p>
                     Have you worked out with a trainer before?
-                    <input type="radio" name="trainer-confirm" id="trainer-yes">
-                    <label for="trainer-yes">Yes</label>
-                    <input type="radio" name="trainer-confirm" id="trainer-no">
-                    <label for="trainer-no">No</label>
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+                    </span>
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-no" />
+                        <label for="trainer-no">No</label>
+                    </span>
                 </p>
 
                 <p>
-                    <input type="checkbox" id="checkbox" name="age-confirm">
-                    <label for="checkbox">I ackowledge that I am at least 18 years of age.</label>
+                    <span class="checkbox-wrapper">
+                        <input type="checkbox" id="checkbox" name="age-confirm">
+                        <label for="checkbox">I ackowledge that I am at least 18 years of age.</label>
+                    </span>
                 </p>
                 <button type="submit">Get Running!</button>
                 </form>
@@ -73,107 +90,246 @@
 
         <!-- "what we do section" -->
         <section class="intro" id="what-we-do">
-            <h2 class="section-title primary-border"> What We Do </h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolore officia, minus voluptates distinctio molestiae beatae ab deserunt iure omnis explicabo. Corrupti totam excepturi reprehenderit nihil modi blanditiis, placeat molestiae. 
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quasi modi, id voluptatum consectetur, nisi dolore, natus culpa nemo quos ipsam eum nobis quia debitis aut! Vero illum porro magni.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere nihil blanditiis, iste illum reprehenderit perferendis vero reiciendis voluptatibus molestias architecto facilis nam ut animi asperiores, harum ipsa, error eius?
-            </p>
+            <div class="flex-row">
+                <h2 class="section-title primary-border"> What We Do </h2>
+                    <div class="flex-row">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus dolore officia, minus voluptates distinctio molestiae beatae ab deserunt iure omnis explicabo. Corrupti totam excepturi reprehenderit nihil modi blanditiis, placeat molestiae. 
+                    </p>
+                    </div>
+                </div>
         </section>
 
         <!-- "what you do" -->
         <section class="steps" id="what-you-do">
-            <h2 class="section-title secondary-border">What You Do</h2>
-
-                <div>
-                    <img src="./assets/images/step-1.svg" alt="" />
-                    <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-                    <p>You're ready so why not?</p>
+            <div class="flex-box">
+                <h2 class="section-title secondary-border">What You Do</h2>
+            
+                <!-- step 1 -->
+                <div class="step">
+                    <h3>Step 1:</h3>
+                    <div class="step-info">
+                        <div class="step-img">
+                           <img src="./assets/images/step-1.svg" alt="" /> 
+                        </div>
+                        <div class="step-text">
+                        <h4>Fill Out the Form Above</h4>
+                        <p>You're already here, so why not?</p>
+                        </div>
+                    </div>    
+                </div>
+            
+                <!-- step 2 -->
+                <div class="step">
+                    <h3>Step 2:</h3>
+                    <div class="step-info">
+                        <div class="step-img">
+                           <img src="./assets/images/step-2.svg" alt="" /> <br />
+                        </div>
+                        <div class="step-text">
+                        <h4>Consult with One of Our Trainers.</h4>
+                        <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                        </div>
+                    </div>    
                 </div>
 
-                <div>
-                    <img src="./assets/images/step-2.svg" alt="" />
-                    <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-                    <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                <!-- step 3 -->
+                <div class="step">
+                    <h3>Step 3:</h3>
+                    <div class="step-info">
+                        <div class="step-img">
+                           <img src="./assets/images/step-3.svg" alt="" /> 
+                        </div>
+                        <div class="step-text">
+                        <h4>Get Running.</h4>
+                        <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+                        </div>
+                    </div>    
                 </div>
 
-                <div>
-                    <img src="./assets/images/step-3.svg" alt="" />
-                    <h3>Step 3: <span>Get Running.</span></h3>
-                    <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+                <!-- step 4 -->
+                <div class="step">
+                    <h3>Step 4:</h3>
+                    <div class="step-info">
+                        <div class="step-img">
+                           <img src="./assets/images/step-4.svg" alt="" /> 
+                        </div>
+                        <div class="step-text">
+                        <h4>See Results.</h4>
+                        <p>Bi-weekly checkins with your trainer will keep you focused.</p>
+                        </div>
+                    </div>    
                 </div>
 
-                <div>
-                    <img src="./assets/images/step-4.svg" alt="" />
-                    <h3>Step 4: <span>See Results.</span></h3>
-                    <p>Bi-weekly checkins with your trainer will keep you focused.</p>
-                </div>
+            </div>
         </section>
 
         <!-- "meet the trainers" -->
-        <section class="trainers" id="your-trainer">
-            <h2 class="section-title primary-border">Meet the Trainers</h2>
-            <!-- Arron Trainer 1-->
-            <article class="trainer">
-                <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout  clothes, ready to pump iron" />
-                <div class="trainer-bio text-left">
-                    <h3>Arron Stephens</h3>
-                    <h4>Speed / Strength</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, velit. Delectus impedit eligendi facere id nemo nulla exercitationem voluptatum deserunt quibusdam in labore pariatur, dolorum fuga sunt error! Quos, natus!
-                    </p>
-                </div>
-            </article>
+        <section id="your-trainer">
+            <div class="flex-box">
 
-            <!-- Joanna Trainer 2 -->
-            <article class="trainer">
-                <div class="trainer-bio text-right">
-                    <h3>Joanna Gill</h3>
-                    <h4>Endurance</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellendus mollitia ipsam consequatur, velit minus maiores, beatae eaque necessitatibus labore modi nam voluptates sapiente pariatur iure nesciunt cum assumenda. Nemo.
-                    </p>
-                </div>
-                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
-            </article>
+                <h2 class="section-title primary-border">Meet the Trainers</h2>
 
-            <!-- Harry Trainer 3-->
-            <article class="trainer">
-                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
-                <div class="trainer-bio text-left">
-                    <h3>Harry "the Headband" Smith</h3>
-                    <h4>Strength</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam beatae fugiat ipsam doloremque ducimus et dicta asperiores, delectus repellat dolor veniam exercitationem omnis harum tempore nihil ab, suscipit animi doloribus.
-                    </p>
-                </div>
-            </article>
+                <div class="trainers">
 
+                    <!-- Arron Trainer 1-->
+                    <article class="trainer">
+                        <div class="trainer-img trainer-1">
+                            <div>
+                                <h3>Arron Stephens</h3>
+                                <h4>Speed / Strength</h4>
+                            </div>
+                        </div>
+                        <div class="trainer-bio">
+                            <h3>Arron Stephens</h3>
+                            <h4>Speed / Strength</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore excepturi illo officiis iure repellendus esse consectetur voluptatibus aliquid laudantium aspernatur, nulla dolor saepe soluta eaque consequatur amet, sunt delectus rem!
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Joanna Trainer 2 -->
+                    <article class="trainer">
+                        <div class="trainer-img trainer-2">
+                            <div>
+                                <h3>Joanna Gill</h3>
+                                <h4>Endurance</h4>
+                            </div>
+                        </div>
+                        <div class="trainer-bio">
+                            <h3>Joanna Gill</h3>
+                            <h4>Endurance</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum est, sunt mollitia amet veritatis possimus incidunt aperiam error quam libero aspernatur, aliquam maxime tenetur voluptas quaerat enim molestiae quibusdam illum.
+                            </p>
+                        </div>
+                    </article>
+                    
+
+                    <!-- Harry Trainer 3-->
+                    <article class="trainer">
+                        <div class="trainer-img trainer-3">
+                            <div>
+                                <h3>Harry "the Headband" Smith</h3>
+                                <h4>Strength</h4>
+                            </div>
+                        </div>
+                        <div class="trainer-bio">
+                            <h3>Harry "the Headband" Smith</h3>
+                            <h4>Strength</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita accusantium tempore itaque incidunt iste fugiat recusandae ut, aliquid dolores deserunt possimus, aliquam non repellat quas maiores corrupti odio, maxime explicabo?
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- pricing grid -->
+        <section id="service-plans" class="services">
+
+            <h2 class="section-title secondary-border">Our Service Plans</h2>
+            <!-- service wrapper -->
+            <div class="service-grid-wrapper">
+
+                <!-- service grid container -->
+                <div class="service-grid-container">
+
+                    <!-- headers  -->
+                    <div class="service-grid-item grid-head basic">
+                        Basic
+                    </div>
+                    <div class="service-grid-item grid-head premium">
+                        Premium
+                    </div>
+
+                    <!-- body  -->
+                    <div class="service-grid-item basic">
+                        Supoort Offered Between 9-5
+                    </div>
+
+                    <div class="service-grid-item premium">
+                        24/7 Plan Support
+                    </div>
+
+                    <div class="service-grid-item basic">
+                        Bi-Weekly Trainer Calls
+                    </div>
+                    
+                    <div class="service-grid-item premium">
+                        Weekly Trainer Calls
+                    </div>
+
+                    <div class="service-grid-item basic">
+                        N/A
+                    </div>
+                    
+                    <div class="service-grid-item premium">
+                        Discounts At Select Running Stores
+                    </div>
+
+                    <div class="service-grid-item both">
+                        Subscriptions to Run Buddy's Health Magazine!
+                    </div>
+                    
+                    <div class="service-grid-item grid-price basic">
+                        $10/mo
+                    </div>
+
+                    <div class="service-grid-item grid-price premium">
+                        $25/mo
+                    </div>
+                    
+                    <div class="service-grid-item cancel">
+                        Cancel At Any Time!
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
+        <!-- Contact form  -->
         <section class="contact" id="reach-out">
             <h2 class="section-title secondary-border">Reach Out</h2>
-            <div class="contact-info">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1651.5474636999927!2d-118.2998682457583!3d34.11831943160182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf61e9d408cb%3A0x73ff07b1c2d6dadc!2sGriffith%20Observatory!5e0!3m2!1sen!2sus!4v1596762030237!5m2!1sen!2sus"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
-                    </div>
+            <div class="flex-box">
+               <div class="contact-info">
+                        <div>
+                            <h3>Run Buddy</h3>
+                            <p>
+                                Any question or concerns before signing up?
+                                <br/>
+                                Let us know and we'll be happy to talk to you!
+                            </p>
+                            <address>
+                                55 Main Street <br />
+                                Some Town, CA <br />
+                                12345 <br />
+                                P: 55.RUN.BUNZ. (555.786.2839) <br />
+                                E: <a href="mailto:info@runbuddy.io">info@runduddy.io</a>
+                            </address>
+                        </div>
+                              
+                        <div class="contact-form">
+                            <h3>Contact Us</h3>
+                            <form>
+                                <label for="contact-name">Your Name</label>
+                                <input type="text" id="contact-name" placeholder="Your Name" />
 
-                    <div>
-                    <h3>Run Buddy</h3>
-                    <p>
-                        Any question or concerns before signing up?
-                        <br/>
-                        Let us know and we'll be happy to talk to you!
-                    </p>
-                    <address>
-                        55 Main Street <br />
-                        Some Town, CA <br />
-                        12345 <br />
-                        P: 55.RUN.BUNZ. (555.786.2839) <br />
-                        E: <a href="mailto:info@runbuddy.io">info@runduddy.io</a>
-                    </address>
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" placeholder="Message"></textarea>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
+                        frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
+                    
                 </div>
             </div>
         </section>
